@@ -1,0 +1,20 @@
+---
+Title: User pushes and pops elements using a stack
+  As a: user
+  I want to: push and pop elements
+  so that: I can store elements and recover them
+Scenarios:
+  - Scenario 1: stack is empty
+      Given: stack is empty
+      When: the user pushes an element
+      Then: the stack contents grow
+  - Scenario 2: stack contains an element
+      Given: stack contains an element
+      When: the user pops an element
+      Then: the element is removed from the stack 
+        And: the element is returned
+  - Scenario 3: stack is empty
+      Given: stack is empty
+      When: the user pops an element
+      Then: an exception is returned
+---
